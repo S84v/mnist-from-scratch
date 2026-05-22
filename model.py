@@ -13,10 +13,10 @@ class NeuralNetwork:
 
     def forward(self, X):
 
-        self.Z1 = np.add(np.dot(self.W1.T, X), self.b1)
+        self.Z1 = np.add(np.dot(X, self.W1), self.b1)
         self.A1 = relu(self.Z1)
 
-        self.Z2 = np.add(np.dot(self.A1.T, self.W2), self.b2)
+        self.Z2 = np.add(np.dot(self.A1, self.W2), self.b2)
         self.A2 = softmax(self.Z2)
 
         return self.A2

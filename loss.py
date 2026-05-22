@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def cross_entropy_loss(y_pred, y_true):
     n = y_pred.shape[0]
 

@@ -62,7 +62,7 @@ class NeuralNetwork:
         print("W2 :", self.W2.shape)
         print("b2 :", self.b2.shape)
 
-        print("=== FORWARD PASS ===")
+        print("\n=== FORWARD PASS ===")
         print("Z1 :", self.Z1.shape)
         print("A1 :", self.A1.shape)
         print("Z2 :", self.Z2.shape)

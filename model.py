@@ -54,6 +54,14 @@ class NeuralNetwork:
 
     def debug_shapes(self): # Helper function for understanding tensor shapes
 
+        print("=== INITIAL WEIGHTES AND BIASES ===")
+        print("W1 :", self.W1.shape)
+        print("b1 :", self.b1.shape)
+        print()
+        
+        print("W2 :", self.W2.shape)
+        print("b2 :", self.b2.shape)
+
         print("=== FORWARD PASS ===")
         print("Z1 :", self.Z1.shape)
         print("A1 :", self.A1.shape)

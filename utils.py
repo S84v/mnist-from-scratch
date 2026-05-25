@@ -16,3 +16,8 @@ def load_labels(filepath):
         labels = np.frombuffer(f.read(), dtype=np.uint8)
 
     return labels
+
+
+def accuracy(y_pred, y_true):
+    predictions = np.argmax(y_pred, axis=1)
+    return np.mean(predictions == y_true)

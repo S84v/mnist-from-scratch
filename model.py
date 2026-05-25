@@ -32,7 +32,7 @@ class NeuralNetwork:
         dZ2[np.arange(m), y] -= 1
         dZ2 /= m
 
-        dW2 = np.dot(self.A2.T, dZ2)
+        dW2 = np.dot(self.A1.T, dZ2)
         db2 = np.sum(dZ2, axis=0, keepdims=True)
 
         #  hidden layer(s) gradient(s)

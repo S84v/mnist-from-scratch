@@ -25,12 +25,12 @@ class NeuralNetwork:
 
     def backward(self, X, y):
 
-        m = X.shape[0]
+        self.m = X.shape[0]
 
         #  output layer gradient
         self.dZ2 = self.A2.copy()
-        self.dZ2[np.arange(m), y] -= 1
-        self.dZ2 /= m
+        self.dZ2[np.arange(self.m), y] -= 1
+        self.dZ2 /= self.m
 
         self.dW2 = np.dot(self.A1.T, self.dZ2)
         self.db2 = np.sum(self.dZ2, axis=0, keepdims=True)
@@ -61,6 +61,8 @@ class NeuralNetwork:
         print("A2 :", self.A2.shape)
 
         print("\n=== BACKWARD PASS ===")
+        print("m:", self.m)
+        print()
         print("dZ2:", self.dZ2.shape)
         print("dW2:", self.dW2.shape)
         print("db2:", self.db2.shape)

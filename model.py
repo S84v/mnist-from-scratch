@@ -27,7 +27,7 @@ class NeuralNetwork:
 
         m = X.shape[0]
 
-        #  output layer gradiesnt
+        #  output layer gradient
         dZ2 = self.A2.copy()
         dZ2[np.arange(m), y] -= 1
         dZ2 /= m

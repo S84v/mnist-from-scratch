@@ -21,7 +21,7 @@ class NeuralNetwork:
         self.Z2 = np.add(np.dot(self.A1, self.W2), self.b2)  # Linear calculation
         self.A2 = softmax(self.Z2)  # Non linear calculation
 
-        return self.A2
+        return self.A2  # Model predictions
 
     def backward(self, X, y):
 

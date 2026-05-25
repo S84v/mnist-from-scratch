@@ -2,8 +2,8 @@ from model import NeuralNetwork
 from utils import load_images, load_labels, accuracy
 from loss import cross_entropy_loss
 
-X_train = load_images("data\train-images.idx3-ubyte")
-y_train = load_labels("data\train-labels.idx1-ubyte")
+X_train = load_images(r"data\train-images.idx3-ubyte")
+y_train = load_labels(r"data\train-labels.idx1-ubyte")
 
 model = NeuralNetwork()
 

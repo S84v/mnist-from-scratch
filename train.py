@@ -20,4 +20,4 @@ for epoch in range(epochs):
 
     model.update_parameters(dW1, db1, dW2, db2, learning_rate)
 
-    print(f"Epoch: {epoch+1} | Loss: {loss} | Accuracy: {accuracy_score}")
+    print(f"Epoch: {epoch+1} | Loss: {loss:.4f} | Accuracy: {accuracy_score:.4f}")

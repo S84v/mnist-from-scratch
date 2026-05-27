@@ -52,13 +52,13 @@ class NeuralNetwork:
         self.W2 -= learning_rate * self.dW2
         self.b2 -= learning_rate * self.db2
 
-    def debug_shapes(self): # Helper function for understanding tensor shapes
+    def debug_shapes(self):  # Helper function for understanding tensor shapes
 
         print("=== INITIAL WEIGHTES AND BIASES ===")
         print("W1 :", self.W1.shape)
         print("b1 :", self.b1.shape)
         print()
-        
+
         print("W2 :", self.W2.shape)
         print("b2 :", self.b2.shape)
 

@@ -1,5 +1,5 @@
 
-# MNIST From Scratch
+# Neural Network for MNIST Classification (From Scratch in NumPy)
 
 ## Overview  
 This repository shows how a tiny neural network can learn to recognise handwritten digits.  

@@ -166,7 +166,6 @@ A hyperparameter search was conducted by evaluating different combinations of tr
    ```bash
    pip install -r requirements.txt
    ```
-   *(Ensure NumPy, Matplotlib, and scikit-learn are installed if requirements.txt is empty).*
 
 4. **Verify Dataset Placement**:
    Ensure the `data/` folder contains the extracted `idx` MNIST dataset files:
